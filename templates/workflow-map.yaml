@@ -1,0 +1,59 @@
+# Executive Workflow Map Template
+# Copy this file and fill in for your specific workflow
+
+workflow:
+  name: ""  # e.g., "Weekly Executive Status Readout"
+  frequency: ""  # weekly, daily, monthly, ad-hoc
+  owner: ""  # Person accountable for this workflow
+  stakeholders: []  # Who consumes the output
+
+  # Systems involved in this workflow
+  systems:
+    - name: ""
+      role: source  # source, processor, output, review
+      data: ""  # What data comes from/goes to this system
+      access: ""  # API, manual, export, webhook
+
+  # Steps in the current workflow (map as-is, not as-desired)
+  steps:
+    - id: 1
+      action: ""
+      system: ""
+      owner: ""  # Person or role
+      time_minutes: 0
+      manual: true  # Is this step done by hand?
+      trust_issue: false  # Is trust/accuracy a concern here?
+      notes: ""
+
+  # Bottlenecks identified
+  bottlenecks:
+    - step_id: 0
+      type: ""  # manual-assembly, data-scatter, trust-gap, handoff-failure, review-delay
+      impact: ""  # hours/week, delayed decisions, dropped items
+      description: ""
+
+  # Trust assessment
+  trust:
+    source_linked: false  # Can every data point be traced to its origin?
+    human_review: false  # Is there a review step before delivery?
+    fallback_path: false  # What happens when automated output fails?
+    adoption_status: ""  # adopted, partially-adopted, rejected, not-attempted
+
+  # Waste quantification
+  waste:
+    hours_per_cycle: 0
+    cycles_per_month: 0
+    total_hours_per_month: 0
+    cost_per_hour: 0  # Estimated loaded cost of the person doing this
+    monthly_cost: 0
+    annual_cost: 0
+
+  # Target state (what good looks like)
+  target:
+    description: ""
+    time_reduction_target: ""  # e.g., "50% reduction in prep time"
+    trust_improvement: ""
+    systems_connected: []
+    output_format: ""
+    review_step: ""
+    fallback: ""
